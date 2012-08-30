@@ -1,0 +1,27 @@
+/* line 7, ../sass/partials/_page.scss */
+body, select, input, textarea { color: #222222; }
+
+/* line 109, ../sass/partials/_page.scss */
+body, html { margin: 0; padding: 0; }
+
+/* line 115, ../sass/partials/_page.scss */
+header { margin: 10px; background: gray; color: #fefefe; }
+
+/* line 123, ../sass/partials/_page.scss */
+#main #filters ul { list-style-type: none; list-style-position: outside; display: block; margin: 0; padding: 0; }
+/* line 130, ../sass/partials/_page.scss */
+#main #filters ul li { position: relative; float: left; display: block; width: 400px; font-family: 'Helvetica'; margin: 10px; }
+/* line 137, ../sass/partials/_page.scss */
+#main #filters ul li span { /* Recieving syntax error: wrong number of arguments (1 for 2) */ /* Recieving syntax error: 100 is not a color for invert */ }
+/* line 139, ../sass/partials/_page.scss */
+#main #filters ul li span.grayscale { filter: grayscale(100%); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: url(resources.svg#desaturate); filter: gray; }
+/* line 143, ../sass/partials/_page.scss */
+#main #filters ul li span.sepia { filter: sepia(100%); -webkit-filter: sepia(100%); -moz-filter: sepia(100%); -ms-filter: sepia(100%); -o-filter: sepia(100%); filter: sepia; }
+/* line 147, ../sass/partials/_page.scss */
+#main #filters ul li span.hue-rotate { filter: hue-rotate(55deg); -webkit-filter: hue-rotate(55deg); -moz-filter: hue-rotate(55deg); -ms-filter: hue-rotate(55deg); -o-filter: hue-rotate(55deg); }
+/* line 152, ../sass/partials/_page.scss */
+#main #filters ul li span.brightness { filter: brightness(80%); -webkit-filter: brightness(80%); -moz-filter: brightness(80%); -ms-filter: brightness(80%); -o-filter: brightness(80%); }
+/* line 156, ../sass/partials/_page.scss */
+#main #filters ul li span.contrast { filter: contrast(40%); -webkit-filter: contrast(40%); -moz-filter: contrast(40%); -ms-filter: contrast(40%); -o-filter: contrast(40%); filter: url(resources.svg#desaturate); }
+/* line 160, ../sass/partials/_page.scss */
+#main #filters ul li span.blur { filter: blur(5px); -webkit-filter: blur(5px); -moz-filter: blur(5px); -ms-filter: blur(5px); -o-filter: blur(5px); }

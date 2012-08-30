@@ -1,0 +1,101 @@
+//Filter Mixins
+//Grayscale, Sepia, Saturate, Hue-rotate, Invert, Brightness, Contrast, Blur
+
+// @mixin grayscale ($percent_grey) {
+				
+// 				filter: grayscale($percent_grey); 
+// 			    -webkit-filter: grayscale($percent_grey); 
+// 			    -moz-filter: grayscale($percent_grey);
+// 			    -ms-filter: grayscale($percent_grey); 
+// 			    -o-filter: grayscale($percent_grey);  
+// 			    filter: url(resources.svg#desaturate); 
+// 			    filter: gray; 
+			    
+			
+// }
+
+// @mixin sepia ($percent_sepia) {
+// 		filter: sepia($percent_sepia); 
+// 			    -webkit-filter: sepia($percent_sepia); 
+// 			    -moz-filter: sepia($percent_sepia);
+// 			    -ms-filter: sepia($percent_sepia); 
+// 			    -o-filter: sepia($percent_sepia);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: sepia; 
+			     
+// }
+
+// @mixin saturate ($percent_saturate) {
+// 		filter: saturate($percent_saturate); 
+// 			    -webkit-filter: saturate($percent_saturate); 
+// 			    -moz-filter: saturate($percent_saturate);
+// 			    -ms-filter: saturate($percent_saturate); 
+// 			    -o-filter: saturate($percent_saturate);  
+// 			    filter: url(resources.svg#desaturate); 
+// 			    filter: saturate; 
+			   
+// }
+
+// @mixin hue-rotate ($angle) {
+// 		filter: hue-rotate($angle); 
+// 			    -webkit-filter: hue-rotate($angle); 
+// 			    -moz-filter: hue-rotate($angle);
+// 			    -ms-filter: hue-rotate($angle); 
+// 			    -o-filter: hue-rotate($angle);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: hue-rotate; 
+			    
+// }
+
+// @mixin invert ($percent_invert) {
+// 		filter: invert($percent_invert); 
+// 			    -webkit-filter: invert($percent_invert); 
+// 			    -moz-filter: invert($percent_invert);
+// 			    -ms-filter: invert($percent_invert); 
+// 			    -o-filter: invert($percent_invert);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: invert; 
+			   
+// }
+
+// @mixin brightness ($percent_bright) {
+// 		filter: brightness($percent_bright); 
+// 			    -webkit-filter: brightness($percent_bright); 
+// 			    -moz-filter: brightness($percent_bright);
+// 			    -ms-filter: brightness($percent_bright); 
+// 			    -o-filter: brightness($percent_bright);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: brightness; 
+			   
+// }
+
+// @mixin contrast ($percent_contrast) {
+			
+// 		filter: contrast($percent_contrast); 
+// 			    -webkit-filter: contrast($percent_contrast); 
+// 			    -moz-filter: contrast($percent_contrast);
+// 			    -ms-filter: contrast($percent_contrast); 
+// 			    -o-filter: contrast($percent_contrast);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: contrast; 
+			   
+		
+// }
+
+// @mixin blur ($length) {
+// 		filter: blur($length); 
+// 			    -webkit-filter: blur($length); 
+// 			    -moz-filter: blur($length);
+// 			    -ms-filter: blur($length); 
+// 			    -o-filter: blur($length);  
+// 			    // filter: url(resources.svg#desaturate); 
+// 			    filter: blur; 
+			    
+// }
+
+
+
+
+
+
+
