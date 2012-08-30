@@ -1,29 +1,22 @@
 eta-filter-mixins
 =================
 
-A project for various SCSS mixins 
+A project for various SCSS mixins  
 
 - currently supports Grayscale, Sepia, Hue-rotate, Brightness, Contrast and Blur
 
-(Saturate and Invert filters coming soon)
+== How to use: ==
 
+Grayscale     @include grayscale(100%);
 
-How to use:
+Sepia         @include sepia(100%);
 
-Grayscale takes a percentage
-@include grayscale(100%);
+Hue-rotate    @include hue-rotate(45deg);
 
-Sepia takes a percentage
-@include sepia(100%);
+Brightness    @include brightness(100%);
 
-Hue-rotation takes an angle
-@include hue-rotate(45deg);
+Contrast      @include contrast(100%);
 
-Brightness takes a percentage
-@include brightness(100%);
+Blur          @include blur(10px);
 
-Contrast takes a percentage
-@include contrast(100%);
-
-Pass a length in pixels
-@include blur(10px);
+Saturate & Invert (Coming Soon)
