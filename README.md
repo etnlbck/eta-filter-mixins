@@ -3,7 +3,7 @@ eta-filter-mixins
 
 A project for various SCSS mixins  
 
-- currently supports Grayscale, Sepia, Hue-rotate, Brightness, Contrast and Blur
+- currently supports Grayscale, Sepia, Hue-rotate, Brightness, Contrast, Blur, Saturate and Invert 
 
 == How to use: ==
 
@@ -19,4 +19,6 @@ Contrast      @include contrast(100%);
 
 Blur          @include blur(10px);
 
-Saturate & Invert (Coming Soon)
+Saturate      @include saturate(100%);
+
+Invert        @include invert(100%);

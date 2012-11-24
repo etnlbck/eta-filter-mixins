@@ -1,57 +1,120 @@
+@import "compass/css3";
+@import "partials/filters";
 
-// Here's where we define some default constants
-@import "partials/base";
+* {box-sizing:border-box;}
 
-// Then we'll import the compass extension
-// @import "html5-boilerplate";
+body,html {margin:0; padding:0;}
+#container {}
 
-// Now, you can simply include everything
-// (except print and helpers) by uncommeting this line
-//@include html5-boilerplate;
+header {
+    margin:10px;
+	background:gray;
+	color:#fefefe;
+}
 
+#main {
+	#filters{
+		ul {
+			list-style-type:none;
+			list-style-position:outside;
+			display:block;
+			margin:0;
+			padding:0;
 
-// Or, you can pick and choose only the sections
-// you want by using the this include
-// @include html5-boilerplate-normalize((
-//   html5,
-//   base,
-//   selection,
-//   links,
-//   typography,
-//   lists,
-//   images,
-//   svg,
-//   figures,
-//   forms,
-//   tables
-// ));
+			li {	
+				position:relative;
+				float:left;
+				display:block;
+				width:400px;
+				font-family:'Helvetica';
+				margin:10px;
+				span {
+                    &:hover {cursor:pointer;
+                    
+                    }
+                    
+					&.grayscale{
+					@include grayscale(100%);
+                    @include transition(all 0.4s linear);
+                        &:hover {
+                        @include grayscale(0%);
+                        @include transition(all 0.4s linear);
+                        
+                        }
+					}
+					
+					&.sepia{
+					@include sepia(100%);
+                    @include transition(all 0.4s linear);
+                    
+                         &:hover {
+                        @include sepia(0%);
+                        @include transition(all 0.4s linear);
+                        }
+					}
 
+					&.hue-rotate {
+					@include hue-rotate(55deg);
+                    @include transition(all 0.4s linear);
+                         &:hover {
+                        @include hue-rotate(180deg);
+                        @include transition(all 0.4s linear);
+                        }
+					}
+					
 
+					&.brightness {
+					@include brightness(80%);
+                    @include transition(all 0.4s linear);
+                        
+                         &:hover {
+                        @include brightness(0%);
+                        @include transition(all 0.4s linear);
+                        }
+					}
 
+					&.contrast {
+					@include contrast(40%);
+                    @include transition(all 0.4s linear);
+                    
+                         &:hover {
+                        @include contrast(100%);
+                        @include transition(all 0.4s linear);
+                        }
+					}
 
-// Or, you can import the "overrides" partial if
-// you want more control over individual mixins
-//@import "partials/overrides";
+					&.blur {
+					@include blur(5px);
+                    @include transition(all 0.4s linear);
+                         &:hover {
+                        @include blur(0px);
+                        @include transition(all 0.4s linear);
+                        }
+					}
 
-// Finally, put your own styles in these partials
-// and add more as needed (i.e. forms, tables, nav)
+					/* Recieving syntax error: wrong number of arguments (1 for 2) */
+					 &.saturate {
+					 @include saturate(100%);
+                     @include transition(all 0.6s linear);
+                        &:hover {
+                        
+                        @include saturate(0%);    
+                        @include transition(all 0.6s linear);
+                        }
+					 }
 
-@import "partials/fonts";
-@import "partials/page";
+					/* Recieving syntax error: 100 is not a color for invert */
+					 &.invert {
+				     @include invert(100%);
+					 @include transition(all 0.6s linear);
+                        &:hover {
+                        @include invert(0%);    
+                        @include transition(all 0.6s linear);
+                         }
+                     }
+				}
+			}
+		}
+	}
 
-
-
-
-// Helpers classes should come second-to-last
-// @include html5-boilerplate-helpers((
-//   ir,
-//   hidden,
-//   visuallyhidden,
-//   invisible,
-//   clearfix
-// ));
-
-// Media should come last
-// @import "partials/media";
-
-
+}
